@@ -1,0 +1,19 @@
+[package]
+name = "NFT_gift"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[test]]
+name = "lib"
+path = "./src/lib.rs"
+
+
+[dependencies]
+near-sdk = "3.1.0"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[profile.dev]
+panic = "abort"
